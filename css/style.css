@@ -142,3 +142,17 @@ figcaption {
   word-break: break-word;
 }
 
+/* .logo */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  border-radius: 8px;
+}
