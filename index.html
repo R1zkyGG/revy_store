@@ -9,6 +9,11 @@
 <body>
   <header>
     <h1>Revy Store</h1>
+    <nav>
+      <button data-filter="all">Semua</button>
+      <button data-filter="tersedia">Tersedia</button>
+      <button data-filter="terjual">Terjual</button>
+    </nav>
   </header>
 
   <main>
@@ -41,7 +46,6 @@
           <img src="foto stok/revy store-sold.png" alt="Stok 3" data-status="terjual">
           <figcaption>130inc - SOLD</figcaption>
         </figure>
-        
       </div>
     </section>
   </main>
@@ -51,6 +55,14 @@
     <a href="https://wa.me/628562752631" target="_blank">WhatsApp</a> |
     <a href="https://www.tiktok.com/@revystore" target="_blank">TikTok</a>
   </footer>
+
+  <!-- Modal Zoom -->
+<div id="modal" class="hidden">
+  <span id="close">&times;</span>
+  <img id="modal-img" src="" alt="Zoom">
+</div>
+``
+
 
   <script src="js/script.js"></script>
 </body>

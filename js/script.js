@@ -29,6 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Zoom gambar
+  document.querySelectorAll(".grid img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+      modalImg.src = img.src;
+    });
+  });
+  
+
   // Tutup modal zoom
   closeModal.addEventListener("click", () => {
     modal.classList.add("hidden");
