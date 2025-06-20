@@ -1,0 +1,144 @@
+/* style.css untuk Revy Store */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f9ff;
+  color: #333;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav button {
+  background-color: white;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+nav button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.grid img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0eaff;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Modal zoom */
+#modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#modal.hidden {
+  display: none;
+}
+
+#modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+figure {
+  text-align: center;
+  max-width: 250px;
+}
+
+figure img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+figcaption {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  word-break: break-word;
+}
+
