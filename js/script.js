@@ -51,3 +51,41 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+// js/follow.js
+
+// Inisialisasi Firebase
+const firebaseConfig = {
+  apiKey: "API_KEY_KAMU",
+  authDomain: "PROJECT_ID.firebaseapp.com",
+  databaseURL: "https://PROJECT_ID.firebaseio.com",
+  projectId: "PROJECT_ID",
+  storageBucket: "PROJECT_ID.appspot.com",
+  messagingSenderId: "SENDER_ID",
+  appId: "APP_ID"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+// Akses tombol & elemen
+document.addEventListener("DOMContentLoaded", () => {
+  const followBtn = document.getElementById('followBtn');
+  const countSpan = document.getElementById('followersCount');
+
+  const ref = db.ref("followers/count");
+
+  // Update tampilan pengikut
+  ref.on("value", snapshot => {
+    const count = snapshot.val() || 0;
+    countSpan.textContent = count;
+  });
+
+  // Saat klik tombol
+  followBtn.addEventListener("click", () => {
+    ref.transaction(count => (count || 0) + 1);
+    followBtn.disabled = true;
+    followBtn.textContent = "Mengikuti";
+  });
+});
