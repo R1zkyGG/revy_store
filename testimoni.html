@@ -5,6 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Semua Testimoni - Revy Store</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+     
+    header {
+    background-image: url('logo/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200px; /* Atur tinggi sesuai kebutuhan */
+    margin: 0;
+    color: white; /* Agar teks header tetap terbaca */
+  }
+
+  header h1 {
+  background: linear-gradient(90deg, red, rgb(187, 255, 0), rgb(0, 255, 8), rgb(1, 242, 255), blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  animation: rainbow-move 3s linear infinite;
+  background-size: 200% auto;
+}
+
+@keyframes rainbow-move {
+  0% { background-position: 0% }
+  100% { background-position: 100% }
+}
+
+    body {
+    margin: 0;
+  }
+  </style>
 </head>
 <body>
   <header>

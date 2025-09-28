@@ -31,19 +31,21 @@ nav {
 }
 
 nav button {
-  background-color: white;
-  border: 1px solid #007bff;
-  color: #007bff;
+  background-color: transparent;
+  border: 1px solid #11253a;
+  color: #000000;
   padding: 0.5rem 1rem;
   margin: 0.2rem;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.2s;
+  box-shadow: 0 4px 16px rgb(1, 255, 230);
 }
 
 nav button:hover {
-  background-color: #007bff;
+  background-color: #00ffff;
   color: white;
+  box-shadow: 0 4px 16px rgb(0, 242, 218);
 }
 
 h2 {

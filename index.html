@@ -20,6 +20,24 @@
     margin: 0;
     color: white; /* Agar teks header tetap terbaca */
   }
+
+  header h1 {
+  background: linear-gradient(90deg, red, green, yellow, cyan, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  animation: rainbow-move 6s linear infinite;
+  background-size: 400% auto;
+  transition: background-position 0.5s;
+}
+
+@keyframes rainbow-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
     body {
     margin: 0;
   }
